@@ -10,9 +10,5 @@ sudo wget https://wischewetter.info/wswin.csv
 
 sudo weectl import --config=/etc/weewx/weewx.conf --import-config=/etc/weewx/import/csv-wswin5.conf
 
-Using configuration file /etc/weewx/weewx.conf
-Starting weectl import...
-**** Unable to parse source-to-WeeWX field map.
-**** No units specified for source field 'Date' in /etc/weewx/import/csv-wswin5.conf.
-**** Nothing done, exiting.
+sudo weectl database calc-missing --config=/etc/weewx/weewx.conf
 
