@@ -12,3 +12,7 @@ sudo weectl import --config=/etc/weewx/weewx.conf --import-config=/etc/weewx/imp
 
 sudo weectl database calc-missing --config=/etc/weewx/weewx.conf
 
+dwd-wget in usr/bin/local
+DWPG Land Brandenburg für Vorhersage VHDL50 bis 54
+
+sudo grep weewxd /var/log/syslog | tail -40
