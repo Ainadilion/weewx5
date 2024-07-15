@@ -15,4 +15,11 @@ sudo weectl database calc-missing --config=/etc/weewx/weewx.conf
 dwd-wget in usr/bin/local
 DWPG Land Brandenburg für Vorhersage VHDL50 bis 54
 
+sudo systemctl start weewx
+sudo systemctl stop weewx
+
 sudo journalctl -u weewx --lines 500
+
+Treiber
+sudo weectl station reconfigure --driver=weewx.drivers.simulator
+sudo weectl station reconfigure --driver=user.interceptor
